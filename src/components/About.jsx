@@ -43,7 +43,7 @@ const About = () => {
       >
         I'm a software engineer specialized in React. I have experience creating interactive and well-structured web applications with clean code and good practices. I'm a quick learner, and I like to be a self-taught person. I am always working on myself to be a better person every day, learning new knowledge about programming and communication skills.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10 ">
+      <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index)=>{
           return <ServiceCard key={service.title} index={index} {...service}/>
         })}
