@@ -72,6 +72,8 @@ export default BallCanvas;
 //     >
 //       <Suspense fallback={ <CanvasLoader /> }>
 //         <OrbitControls 
+//           autoRotate
+//           autoRotateSpeed={5}
 //           enableZoom={false}
 //         />
 //         <Ball imgUrl={icon}/>
