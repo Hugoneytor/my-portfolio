@@ -7,6 +7,10 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
+//template_tosm5fj
+//service_201c85f
+//kBFDob17zzJDTlgR9
+
 const Contact = () => {
   const formRef = useRef();
 
@@ -25,7 +29,35 @@ const Contact = () => {
     })
   }
   const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
+    emailjs.send(
+      "service_201c85f", 
+      "template_tosm5fj",
+      {
+        from_name: form.name,
+        to_name: 'Hugo Alvarez',
+        from_email: form.email,
+        to_email: 'hzalvarez23@gmail.com',
+        message: form.message,
+      },
+      "kBFDob17zzJDTlgR9"  
+    ).then( ()=>{
+      setLoading(false);
+      alert("Thank you, I will get back to you as soon as possible.")
+
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }).catch( error => {
+      setLoading(false)
+
+      console.log(error);
+      alert("Something went wrong.")
+    })
   }
 
   return (
