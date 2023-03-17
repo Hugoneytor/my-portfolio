@@ -1,28 +1,24 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
-  jobit,
-  tripguide,
-  threejs,
+  BrightLogo,
+  InglesLogo,
+  ReactLogo,
+  UniLogo,
+  booksLibrary,
+  emojiSelector,
+  gifApp,
+  todoApp,
+  weatherApp
 } from "../assets";
 
 export const navLinks = [
@@ -46,14 +42,14 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "React Developer",
     icon: backend,
   },
-
+  {
+    title: "React Native Developer",
+    icon: mobile,
+  },
+  
 ];
 
 const technologies = [
@@ -89,55 +85,52 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Videogames Developer with godot",
+    company_name: "Universidad de Colima",
+    icon: UniLogo,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Jan 2021 - June 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and designing a platform videogame that helps you decrease your anxiety levels",
+      "Working in a team and getting new communication skills",
+      "Participate in weekly meetings to showcase progress",
+    ],
+  },
+  {
+    title: "English Student",
+    company_name: "Inglés Individual",
+    icon: InglesLogo,
+    iconBg: "#E6DEDD",
+    date: "April 2022 - March 2022",
+    points: [
+      "Starting to learn a English from scratch.",
+      "I was helped by teachers that taught me and motivated me how to speak with confidence and fluently.",
+      "Participaing in conversation clubs with other students",
+      "Learning new vocabulary and English grammar",
     ],
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "Brightcoders",
+    icon: BrightLogo,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Nov 2021 - May 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Developing and maintaining web applications using React Native",
+      "Collaborating with cross-functional teams including designers, and other developers to create high-quality products.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "React Developer",
+    company_name: "Self-taught-person",
+    icon: ReactLogo,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Nov 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing personal projects and learning React by watching tutorials and looking up information",
+      "Implementing responsive design and ensuring cross-browser compatibility.",,
     ],
   },
 ];
@@ -171,68 +164,120 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "GifExpert App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "This app allows you to search for any type of gif you want. It uses the Giphy API and of course feel free to interact with it.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Css",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Giphy API",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: gifApp,
+    source_code_page: "https://gif-expert-app-hugoneytor.netlify.app/",
+    source_code_link: "https://github.com/Hugoneytor/gif-finder-app",
   },
   {
-    name: "Job IT",
+    name: "Weather widget",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "This is a widget to which you can consult the temperature and forecast of certain city in the world, You can see the information and a map that shows the city you looked up.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Css",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "JavaScript",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: weatherApp,
+    source_code_page: "https://hugoneytor.github.io/weather-widget/",
+    source_code_link: "https://github.com/Hugoneytor/weather-widget",
   },
   {
-    name: "Trip Guide",
+    name: "Todo App",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "This is a simple To do list made in React to apply the knowledge acquired in one of the most used hooks in React, the UseState.",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Css",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Hooks",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: todoApp,
+    source_code_page: "https://hugoneytor.github.io/Todo-App-useState-/",
+    source_code_link: "https://github.com/Hugoneytor/Todo-App-useState-",
   },
+  {
+    name: "Book Library",
+    description:
+      "Here you can add the books you have started reading and add different types of information such as the book title, author, cover, and a review. This app was built with react-router-dom and useContext",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React-Router-Dom",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "useContext",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: booksLibrary,
+    source_code_page: "https://hugoneytor.github.io/book-library/",
+    source_code_link: "https://github.com/Hugoneytor/book-library",
+  },
+  {
+    name: "Emoji Selector",
+    description:
+      "This is an emoji selector app that allows you to insert emojis into your text. You can add them in the position you were before and continue writing in the input. This is a simple project designed primarily to practice using useRef and implementing it in a project.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "useRef",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: emojiSelector,
+    source_code_page: "https://hugoneytor.github.io/emoji-selector/",
+    source_code_link: "https://github.com/Hugoneytor/emoji-selector",
+  },
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };

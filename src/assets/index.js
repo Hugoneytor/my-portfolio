@@ -11,7 +11,20 @@ import yoIcon from "./yoIcon.png";
 import AmongIzq from "./amongIzq.png";
 import AmongDer from "./amongDer.png";
 import resume from "./cv/resume.pdf";
-import yoMero from "./yoMero.jpg"
+import yoMero from "./yoMero.jpg";
+import clip from "./clip.png";
+import me from "./me.jpg"
+
+import BrightLogo from "./BrightLogo.png";
+import InglesLogo from "./InglesLogo.png";
+import ReactLogo from "./ReactLogo.png";
+import UniLogo from "./UniLogo.png";
+
+import booksLibrary from "./Projects_thumbnails/booksLibrary.png";
+import emojiSelector from "./Projects_thumbnails/emojiSelector.png";
+import gifApp from "./Projects_thumbnails/gifApp.png";
+import todoApp from "./Projects_thumbnails/todoApp.png";
+import weatherApp from "./Projects_thumbnails/weatherApp.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -69,5 +82,16 @@ export {
   AmongIzq,
   AmongDer,
   resume,
-  yoMero
+  yoMero,
+  BrightLogo,
+  InglesLogo,
+  ReactLogo,
+  UniLogo,
+  clip,
+  booksLibrary,
+  emojiSelector,
+  gifApp,
+  todoApp,
+  weatherApp,
+  me
 };
