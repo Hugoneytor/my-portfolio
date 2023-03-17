@@ -7,6 +7,12 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import yoIcon from "./yoIcon.png";
+import AmongIzq from "./amongIzq.png";
+import AmongDer from "./amongDer.png";
+import resume from "./cv/resume.pdf";
+import yoMero from "./yoMero.jpg"
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -59,4 +65,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  yoIcon,
+  AmongIzq,
+  AmongDer,
+  resume,
+  yoMero
 };

@@ -6,6 +6,7 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc'
+import MyPhoto from './MyPhoto';
 
 const ServiceCard = ( {title, index, icon} ) => {
   return(
@@ -39,9 +40,16 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] leading-[30px] w-full flex justify-between min-[1000px]:flex-row flex-col-reverse"
       >
-        I'm a software engineer specialized in React. I have experience creating interactive and well-structured web applications with clean code and good practices. I'm a quick learner, and I like to be a self-taught person. I am always working on myself to be a better person every day, learning new knowledge about programming and communication skills.
+        <p className='flex flex-1 mt-4'>
+          I'm a software engineer specialized in React. I have experience creating interactive and well-structured web applications with clean code and good practices. I'm a quick learner, and I like to be a self-taught person. I am always working on myself to be a better person every day, learning new knowledge about programming and communication skills.
+          <br /><br />
+          -Mexican.
+          <br />
+          -22 years old.
+        </p>
+        <MyPhoto />
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index)=>{
@@ -51,5 +59,6 @@ const About = () => {
     </>
   )
 }
+
 
 export default SectionWrapper(About, "About") 
